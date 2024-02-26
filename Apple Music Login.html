@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/html/appleclone.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Apple Music Login_files/appleclone.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Music Login</title>
+ </head>
+ <body style="background-color: rgb(43, 42, 42);">
+    <div class="image">
+    <img src="./Apple Music Login_files/apple.png" height="100px" width="100px">
+    </div>
+    <h1 style="color:white">Sign In or Sign Up </h1>
+    <h2 style="color: gray;"> Enter your email to get started.</h2>
+    <h2 class="rounded" style="color: gray;">Email or Apple ID</h2>
+    <a href="https://iforgot.apple.com/password/verify/appleid"><h4 style="color: rgba(255, 0, 89, 0.918);">Forgot Apple ID or Password?</h4></a>
+    <h6 style="color: white;"><p>Apple ID information is used to allow you to sign in securely and access your data. Apple records certain data for security, support, and reporting purposes. If you agree, Apple may also use your Apple ID information to send you marketing emails and communications, including based on your use of Apple services.</p></h6>
+    <a href="https://www.apple.com/legal/privacy/data/en/apple-id-media-services/"><h6 style="color: rgb(255, 0, 89, 0.918);">See how your data is managed</h6></a>
+    <h4 class="pink" style="color: white;">Continue</h4>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
